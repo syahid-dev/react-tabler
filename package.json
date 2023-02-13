@@ -1,0 +1,69 @@
+{
+  "name": "@syahid246/react-tabler",
+  "version": "0.1.0",
+  "description": "Tabler components built with React",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "author": {
+    "name": "Kafaa Billahi Syahida",
+    "email": "kafaabillaahisyahida135@gmail.com"
+  },
+  "homepage": "https://github.com/syahid246/react-tabler#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/syahid246/react-tabler.git"
+  },
+  "bugs": {
+    "url": "https://github.com/syahid246/react-tabler/issues"
+  },
+  "keywords": [
+    "react",
+    "tabler",
+    "bootstrap",
+    "component",
+    "components",
+    "react-component",
+    "ecosystem-react"
+  ],
+  "scripts": {
+    "clean": "rm -rf lib",
+    "build": "tsc",
+    "prepublishOnly": "npm run clean && npm run build",
+    "lint": "eslint src/**/*.{ts,tsx}"
+  },
+  "files": [
+    "lib/*"
+  ],
+  "dependencies": {
+    "clsx": "^1.2.1",
+    "prop-types": "^15.8.1"
+  },
+  "devDependencies": {
+    "@types/prop-types": "^15.7.5",
+    "@types/react-dom": "^16.9.17",
+    "@typescript-eslint/eslint-plugin": "^5.51.0",
+    "@typescript-eslint/parser": "^5.51.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.34.0",
+    "eslint-plugin-react": "^7.32.2",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "typescript": "^4.9.5"
+  },
+  "peerDependencies": {
+    "@types/react": ">=16.14.8",
+    "react": ">=16.14.0",
+    "react-dom": ">=16.14.0"
+  },
+  "peerDependenciesMeta": {
+    "@types/react": {
+      "optional": true
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
