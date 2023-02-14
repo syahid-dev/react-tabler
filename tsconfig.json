@@ -4,6 +4,7 @@
 		"lib": ["DOM", "ES2018"],
 		"target": "ES2018",
 		"module": "CommonJS",
+		"moduleResolution": "node",
 		"allowJs": false,
 		"rootDir": "src",
 		"outDir": "lib",
